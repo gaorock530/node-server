@@ -1,0 +1,20 @@
+<html ng-app="myApp">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/assets/style.css?v=1.0" />
+        <script src="/assets/js/angular.js"></script>
+    </head>
+    <body ng-controller="MainController as vm">
+        <h1>This is index page!</h1>
+        <input type="text" ng-model="vm.message">
+        <br />
+        <br />
+        {{vm.message}}
+        <br />
+        <ul>
+            <li ng-repeat="person in vm.people">
+                {{person.name}}
+            </li>
+        </ul>      
+        <script src="/assets/js/ag.js"></script>
+    </body>
+</html>
